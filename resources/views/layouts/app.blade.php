@@ -7,8 +7,9 @@
     <title>@yield('title', 'My Website')</title>
 </head>
 <body>
+    @include('components.header')
     @include('components.navbar')
-    <!-- @include('components.header') -->
+    
 
     <main class='bg-darkGreen'>
         @yield('content')
