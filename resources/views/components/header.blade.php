@@ -5,7 +5,7 @@
             <li><a href="{{ url('/') }}">Home</a></li>
             <li><a href="{{ url('/about') }}">About</a></li>
             <li><a href="{{ url('/service') }}">Services</a></li>
-            <li><a href="{{ url('/contact') }}">Contact</a></li>
+            <li><a href="{{ url('/contact') }}">Contactsss</a></li>
             <a href="{{ url('/login') }}">
                 <li class="bg-limeGreen w-20 h-10 rounded-sm flex items-center justify-center transition ease-out hover:border-2 hover:border-limeGreen hover:bg-darkGreen duration-500">Login</li>
             </a>
