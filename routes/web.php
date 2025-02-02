@@ -1,13 +1,12 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\RoutesControllers;
+use App\Http\Controllers\CompanyUserController;
+use App\Http\Controllers\NormalUserController;
 
-
-Route::get('/', function () {
-    return view('home');
-});
-
-Route::get('/contact', function () {
-    return view('contact');
-});
-
+// Routes path
+Route::get('/', [NormalUserController::class, 'home']);
+Route::get('/contact', [NormalUserController::class, 'contact']);
+Route::get('/register', [CompanyUserController::class, 'register']);
+Route::get('/login', [CompanyUserController::class, 'login']);

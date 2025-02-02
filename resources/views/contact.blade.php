@@ -1,5 +1,6 @@
 @extends('layouts.app')
-
+@include('components.header')
+@include('components.navbar')
 @section('title', 'Logistic and Transport')
 
 @section('content')
@@ -8,7 +9,7 @@
         <div class="relative w-full h-[40vh] md:h-[65vh]">
             <!-- Centered Text -->
             <h3 class="absolute inset-0 flex items-center justify-center text-2xl md:text-4xl text-white kode-mono-text-font">
-                Contact us
+                {{ $title }}
             </h3>
             
             <!-- Image -->
@@ -18,27 +19,27 @@
         <!-- cards working hrs -->
         <div class="flex flex-col md:flex-row md:justify-between items-center gap-y-6 md:gap-x-10 pt-16 md:pt-24 px-4 md:px-14 w-full">
             <div class="w-full h-auto py-4 p-4 border-2 border-limeGreen rounded-md text-white kode-mono-text-font">
-                <h3 class="text-center">Office</h3>
+                <h3 class="text-center">{{ $cardOneTitle[0] }}</h3>
                 <ul class="mt-3">
-                    <li>Blue Transport</li>
-                    <li>P.O.Box 73, Dodoma</li>
-                    <li>NaneNane Dodoma</li>
+                    <li>{{ $cardOneTitle[1] }}</li>
+                    <li>{{ $cardOneTitle[2] }}</li>
+                    <li>{{ $cardOneTitle[3] }}</li>
                 </ul>
             </div>
 
             <div class="w-full h-auto py-7 p-4 border-2 border-limeGreen rounded-md text-white kode-mono-text-font">
-                <h3 class="text-center">Office Hrs</h3>
+                <h3 class="text-center">{{ $cardTwoTitle[0] }}</h3>
                 <ul class="mt-3">
-                    <li>Mon - Fri 08:00 05:00</li>
-                    <li>Sat 08:00 02:00</li>
+                    <li>{{ $cardTwoTitle[1] }}</li>
+                    <li>{{ $cardTwoTitle[2] }}</li>
                 </ul>
             </div>
 
             <div class="w-full h-auto py-7 p-4 border-2 border-limeGreen rounded-md text-white kode-mono-text-font">
-                <h3 class="text-center">Office Hrs</h3>
+                <h3 class="text-center">{{ $cardThreeTitle[0] }}</h3>
                 <ul class="mt-3">
-                    <li>Mon - Fri 08:00 05:00</li>
-                    <li>Sat 08:00 02:00</li>
+                    <li>{{ $cardThreeTitle[1] }}</li>
+                    <li>{{ $cardThreeTitle[2] }}</li>
                 </ul>
             </div>
         </div>
@@ -133,3 +134,4 @@
         </div>
     </section>
 @endsection
+@include('components.footer')
