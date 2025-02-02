@@ -13,14 +13,10 @@
     <title>@yield('title', 'My Website')</title>
 </head>
 <body>
-    @include('components.header')
-    @include('components.navbar')
-    
 
     <main class='bg-darkGreen'>
         @yield('content')
     </main>
 
-    @include('components.footer')
 </body>
 </html>
