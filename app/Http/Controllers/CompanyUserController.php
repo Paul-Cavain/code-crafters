@@ -16,4 +16,9 @@ class CompanyUserController extends Controller
     public function login() {
         return view('login');
     }
+
+    // approval route function
+    public function approval() {
+        return view('approval');
+    }
 }

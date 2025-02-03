@@ -9,4 +9,5 @@ use App\Http\Controllers\NormalUserController;
 Route::get('/', [NormalUserController::class, 'home']);
 Route::get('/contact', [NormalUserController::class, 'contact']);
 Route::get('/register', [CompanyUserController::class, 'register']);
+Route::get('/approval', [CompanyUserController::class, 'approval']);
 Route::get('/login', [CompanyUserController::class, 'login']);
