@@ -13,10 +13,17 @@
     <title>@yield('title', 'My Website')</title>
 </head>
 <body>
+    @if (!request()->is(['login', 'register']))
+        @include('components.header')
+        @include('components.navbar')
+    @endif
 
     <main class='bg-darkGreen'>
         @yield('content')
     </main>
 
+    @if (!request()->is(['login', 'register']))
+        @include('components.footer')
+    @endif
 </body>
 </html>

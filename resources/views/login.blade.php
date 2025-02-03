@@ -3,7 +3,7 @@
 @section('title', 'Logistic and Transport')
 
 @section('content')
-    <sextion class="flex flex-col md:flex-row w-full min-h-screen justify-center items-center py-10 md:py-0 px-32">
+    <section class="flex flex-col md:flex-row w-full min-h-screen justify-center items-center py-10 md:py-0 px-32">
         <div class="w-full">
             <h2 class="text-xl text-white flex justify-center items-center md:hidden">Login to your Account</h2>
             <p class='text-xs text-center text-white flex justify-center items-center md:hidden'>See what is going on with your Business</p>
@@ -43,5 +43,7 @@
             </p>
             </form>
         </div>
-    </sextion>
+        
+    </section>
+
 @endsection
