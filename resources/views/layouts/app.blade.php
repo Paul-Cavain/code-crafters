@@ -18,11 +18,12 @@
         @include('components.navbar')
     @endif
 
+
     <main class='bg-darkGreen'>
         @yield('content')
     </main>
 
-    @if (!request()->is(['login', 'register']))
+    @if (!request()->is(['login', 'register', 'approval']))
         @include('components.footer')
     @endif
 </body>
