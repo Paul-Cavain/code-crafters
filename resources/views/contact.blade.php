@@ -1,6 +1,4 @@
 @extends('layouts.app')
-@include('components.header')
-@include('components.navbar')
 @section('title', 'Logistic and Transport')
 
 @section('content')
@@ -134,4 +132,4 @@
         </div>
     </section>
 @endsection
-@include('components.footer')
+

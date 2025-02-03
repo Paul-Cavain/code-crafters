@@ -49,7 +49,7 @@
                 />
                 <button
                     type='button'
-                    class='w-5/6 md:w-3/4 h-10 bg-white hover:bg-darkGreen hover:text-white border-2 border-white text-black mt-6'
+                    class='w-5/6 md:w-3/4 h-10 text-white bg-limeGreen hover:bg-darkGreen hover:text-white hover:border-2 hover:border-white mt-6'
                 >
                 Next
                 </button>
