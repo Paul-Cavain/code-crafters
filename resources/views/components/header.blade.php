@@ -1,7 +1,9 @@
-<header class="bg-darkGreen border-2 border-white fixed top-0 left-0 right-0 w-full z-10">
-    <nav class="container-fill flex justify-between items-center px-4 md:px-12 py-4">
+<header class="bg-darkGreen border-b-2 border-gray-600 fixed top-0 left-0 right-0 w-full z-10">
+    <nav class="container-fill flex justify-between items-center px-4 md:px-10 py-3.5">
         <!-- Brand Name -->
-        <h2 class="text-limeGreen text-lg md:text-2xl font-semibold md:font-bold">Blue Transport</h2>
+        <a href="{{ url('/') }}">
+            <span class="text-limeGreen text-lg md:text-sm font-semibold md:font-light">Logistic Transport</span>
+        </a>
 
         <!-- Mobile Menu Button -->
         <button id="menu-btn" class="md:hidden text-white focus:outline-none">
@@ -18,11 +20,6 @@
             <li><a href="{{ url('/about') }}" class="hover:text-limeGreen transition ease-out duration-500">About</a></li>
             <li><a href="{{ url('/service') }}" class="hover:text-limeGreen transition ease-out duration-500">Services</a></li>
             <li><a href="{{ url('/contact') }}" class="hover:text-limeGreen transition ease-out duration-500">Contact</a></li>
-            <li>
-                <a href="{{ url('/login') }}" class="bg-limeGreen px-5 py-2 rounded-md transition ease-out hover:border-2 hover:border-limeGreen hover:bg-darkGreen duration-500 flex items-center justify-center">
-                    Login
-                </a>
-            </li>
         </ul>
     </nav>
 
