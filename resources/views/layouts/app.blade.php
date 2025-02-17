@@ -13,7 +13,7 @@
     <title>@yield('title', 'My Website')</title>
 </head>
 <body>
-    @if (request()->is(['login', 'register', 'approval']))
+    @if (request()->is(['login', 'registerUser', 'registerCompany', 'approval']))
         @include('components.header')
     @else
         @include('components.header')
@@ -24,7 +24,7 @@
         @yield('content')
     </main>
 
-    @if (!request()->is(['login', 'register', 'approval']))
+    @if (!request()->is(['login', 'registerUser', 'registerCompany', 'approval']))
         @include('components.footer')
     @endif
 </body>

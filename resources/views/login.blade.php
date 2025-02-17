@@ -41,7 +41,7 @@
             </a>
             <button class="bg-limeGreen w-4/5 md:w-1/2 h-10 px-4 transition ease-out duration-500 hover:bg-darkGreen hover:text-white hover:border-2 hover:border-white">Login</button>
             <p class='text-xs flex gap-x-4'>Not registered?
-                <a href='./register'>
+                <a href='./registerUser'>
                     <span class='text-blue-500'>Create Account</span>
                 </a>
             </p>

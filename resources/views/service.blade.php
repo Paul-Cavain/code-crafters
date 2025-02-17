@@ -175,6 +175,27 @@
                 </div>
             </div>
         </div>
+
+        <!-- connect with us -->
+        <div class='my-40'>
+            <!-- Image -->
+            <img src="{{ asset('images/connect.jpg') }}" alt="contact image" class="w-full h-[36vh] md:h-[40vh] mx-auto object-cover opacity-30 absolute">
+
+            <div class='relative text-white px-20 pt-12'>
+                <h3 class='text-xl'>Connect with Us</h3>
+                <div class='grid grid-cols-2 justify-between items-center pt-8'>
+                    <div>
+                        <a href='./registerCompany'>
+                            <button class="w-fit px-4 py-2 rounded-md bg-limeGreen hover:border-2 hover:border-limeGreen duration-500 ease-out transition-all hover:bg-darkGreen">Register Your Company</button>
+                        </a>
+                    </div>
+                    <div class='flex flex-row gap-x-4 justify-end items-end'>
+                        <button class="w-fit px-4 py-2 rounded-md bg-limeGreen hover:border-2 hover:border-limeGreen duration-500 ease-out transition-all hover:bg-darkGreen">About Us</button>
+                        <button class="w-fit px-4 py-2 rounded-md bg-limeGreen hover:border-2 hover:border-limeGreen duration-500 ease-out transition-all hover:bg-darkGreen">Contact Us</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 @endsection
 

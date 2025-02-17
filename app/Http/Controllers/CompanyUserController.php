@@ -7,9 +7,14 @@ use Illuminate\Http\Request;
 
 class CompanyUserController extends Controller
 {
-    // register route function
-    public function register() {
-        return view('register');
+    // registerUser route function
+    public function registerUser() {
+        return view('registerUser');
+    }
+
+    // registerCompany route function
+    public function registerCompany() {
+        return view('registerCompany');
     }
 
     // login route function
